@@ -10,7 +10,7 @@ Textdomain: abt
 */
 
 /*
-Copyright 2020 WMS N@W (https://n3rds.work)
+Copyright 2020-2021 WMS N@W (https://n3rds.work)
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License (Version 2 - GPLv2) as published by
@@ -152,7 +152,7 @@ function ab_theme_testing_tracking_output() {
 			pageTracker._trackEvent('AB Test', 'Setze Theme', "<?php echo $segment; ?>", 1, true);
 		} else if (typeof(_gaq) != 'undefined') {
 			_gaq.push(['_setCustomVar', <?php echo AB_THEME_TESTING_SLOT; ?>, "Theme Test", "<?php echo $segment; ?>", 2]);
-			_gaq.push(['_trackEvent', 'AB Test', 'Set Theme', "<?php echo $segment; ?>", 1, true]);
+			_gaq.push(['_trackEvent', 'AB Test', 'Setze Theme', "<?php echo $segment; ?>", 1, true]);
 		}
 	</script>
 	<?php
